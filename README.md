@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# SpeerCheck – Interview Scheduling Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed as part of the Frontend Assignment for Speer.  
+It is a React + TypeScript-based interface that enables recruiters to schedule interviews with engineers based on availability overlaps.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+-  Candidate selection via dropdown
+-  Weekly calendar view (Monday–Friday, 9 AM – 6 PM)
+-  30-minute slot intervals
+-  Highlighted engineer availability (green)
+-  Candidate’s preferred availability range
+-  Blue highlights for overlapping available slots
+-  Click to confirm an interview
+-  Confirmation message with selected candidate, engineer, and time
+-  Slot is locked after selection (session-based)
+-  AM/PM time format
+-  Optional feature: Interview duration selection (15 / 30 / 60 minutes)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##  Tech Stack
 
-### `npm test`
+- **React** (with **TypeScript**)
+- **Tailwind CSS** for styling
+- **Jest** for unit testing
+- Local **JSON files** for mock data (no backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Unit Test
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To validate business logic beyond UI rendering, a custom unit test was implemented.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Test file:  
+`src/utils/availabilityUtils.test.ts`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Test target:  
+Intersection logic between engineer and candidate availability.
 
-### `npm run eject`
+To run tests:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Live Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+     https://your-deployed-url.vercel.app
+    (Replace with your actual deployment link)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ Demo Recording
 
-## Learn More
+A 5-minute walkthrough video was created to demonstrate:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Candidate selection
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Calendar interaction
+
+    Slot selection and confirmation
+
+    Duration selection
+
+    Unit test execution
+
+Voice narration included, with live deployed URL visible in the browser.
+ Design Decisions
+
+    Reusable and type-safe components
+
+    Local JSON data to avoid external dependencies
+
+    AM/PM formatting for clarity
+
+    Tailwind CSS for quick styling and responsive layout
+
+    State-driven logic for selections and confirmations
+
+Running Locally
+
+npm install
+npm start
+
+To run tests:
+
+npm test
+
+ About Me
+
+Developed by Ali Riza Sevgili
+Toronto, Canada
+https://github.com/AliRizaSevgili
+https://www.linkedin.com/in/alirizasevgili/
+    
+
+ 
