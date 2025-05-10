@@ -47,8 +47,8 @@ npm test
 
  Live Demo
 
-     https://your-deployed-url.vercel.app
-    (Replace with your actual deployment link)
+     https://speercheck-frontend.vercel.app/
+    
 
  Demo Recording
 
